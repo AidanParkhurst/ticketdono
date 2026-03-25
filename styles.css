@@ -56,6 +56,7 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  background: #081C15;
 }
 
 body {
@@ -63,7 +64,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--gray-900);
-  background: var(--white);
+  background-color: #081C15;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -239,8 +240,12 @@ fieldset { border: none; }
   transition: background 0.35s ease, backdrop-filter 0.35s ease, box-shadow 0.35s ease;
 }
 
+.nav:has(#nav-links.is-open) {
+  background: #081C15;
+}
+
 .nav.scrolled {
-  background: rgba(8, 28, 21, 0.96);
+  background: #081C15;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 rgba(255,255,255,0.06);
@@ -337,6 +342,7 @@ fieldset { border: none; }
   align-items: center;
   overflow: hidden;
   padding-top: var(--nav-h);
+  background-color: #081C15;
 }
 
 .hero__bg {
@@ -644,6 +650,203 @@ fieldset { border: none; }
 .charity-pill--dark:hover {
   background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.18);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CHARITY LETTER (hero visual)
+───────────────────────────────────────────────────────────── */
+.charity-letter {
+  position: relative;
+  width: min(100%, 360px);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 2px 0 rgba(0,0,0,0.06),
+    0 8px 32px rgba(0,0,0,0.22),
+    0 24px 60px rgba(0,0,0,0.18),
+    0 0 60px rgba(45, 106, 79, 0.28),
+    0 0 100px rgba(45, 106, 79, 0.14);
+  /* translateZ forces GPU compositing — keeps text crisp through the rotation */
+  transform: rotate(1.5deg) translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  /* subtle border prevents the stark white-on-dark antialiasing bright-edge artifact */
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.charity-letter__head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--green-800);
+  color: var(--white);
+  padding: 0.85rem 1.1rem;
+}
+
+.charity-letter__head-logo {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.1rem;
+  height: 2.1rem;
+  background: rgba(255,255,255,0.12);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+}
+
+.charity-letter__head-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.charity-letter__org {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.charity-letter__ein {
+  font-size: 0.72rem;
+  font-weight: 500;
+  opacity: 0.65;
+  letter-spacing: 0.02em;
+}
+
+.charity-letter__body {
+  padding: 1.15rem 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.charity-letter__date {
+  font-size: 0.775rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.charity-letter__salutation {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.charity-letter__para {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--gray-700);
+}
+
+.charity-letter__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0.25rem 0;
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.charity-letter__detail-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.charity-letter__detail-row:last-child {
+  border-bottom: none;
+}
+
+.charity-letter__detail-row--fmv {
+  background: var(--amber-50);
+}
+
+.charity-letter__detail-label {
+  font-size: 0.73rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.charity-letter__detail-value {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--gray-900);
+  text-align: right;
+}
+
+.charity-letter__fmv-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--amber-400);
+  color: #2b1805;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.charity-letter__disclaimer {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--gray-500);
+  font-style: italic;
+}
+
+.charity-letter__sig {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--gray-100);
+  margin-top: 0.15rem;
+}
+
+.charity-letter__sig-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.charity-letter__sig-line {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--green-700);
+  font-style: italic;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.charity-letter__sig-title {
+  font-size: 0.72rem;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.charity-letter__stamp {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--green-700);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(45, 106, 79, 0.35);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1456,10 +1659,10 @@ fieldset { border: none; }
   .hero__visual {
     justify-content: flex-start;
   }
-  .impact-visual {
+  .charity-letter {
     width: 100%;
-    max-width: 560px;
-    min-height: 380px;
+    max-width: 340px;
+    margin: 0 auto;
   }
 
   /* Steps */
@@ -1511,22 +1714,8 @@ fieldset { border: none; }
   .section__header { margin-bottom: 2.5rem; }
 
   .hero__sub { font-size: 0.95rem; }
-  .impact-visual {
-    min-height: 360px;
-    padding: 1.1rem;
-  }
-  .impact-bubble {
-    padding: 0.9rem;
-    width: min(100%, 13.75rem);
-  }
-  .impact-bubble--donor {
-    justify-self: start;
-  }
-  .impact-bubble--charity {
-    justify-self: end;
-  }
-  .impact-bubble--winner {
-    margin-left: 1rem;
+  .charity-letter {
+    transform: rotate(0.8deg) translateZ(0);
   }
 
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
