@@ -56,7 +56,7 @@
         <div class="hero__content">
           <p class="hero__eyebrow">The Ticket Donation Platform</p>
           <h1 class="hero__headline">Use Your Tickets<br>For Something<br>Bigger</h1>
-          <p class="hero__sub">Donate your sports, concert, or theater tickets for a fair market charitable receipt. We turn them into prizes, and every entry fee goes to the charity you choose.</p>
+	  <p class="hero__sub">Donate your tickets to a charity of your choice. Receive your legal tax writeoff instantly, for fair market value.<br/><br/>Your tickets will be used as prizes, and proceeds go to your chosen charity. 
           <div class="hero__actions">
             <a href="#waitlist" class="btn btn--accent btn--lg">Join the Waitlist <span aria-hidden="true">→</span></a>
             <a href="#how-it-works" class="btn btn--ghost btn--lg">How It Works</a>
@@ -147,59 +147,206 @@
           <p class="section__sub">From unused ticket to tax deduction, we handle everything in between.</p>
         </div>
 
-        <div class="steps">
-          <div class="step fade-up">
-            <div class="step__icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <rect x="3" y="9" width="26" height="14" rx="3.5" stroke="currentColor" stroke-width="2.5"/>
-                <line x1="11" y1="9" x2="11" y2="23" stroke="currentColor" stroke-width="2.5" stroke-dasharray="3 3"/>
-                <line x1="21" y1="9" x2="21" y2="23" stroke="currentColor" stroke-width="2.5" stroke-dasharray="3 3"/>
-                <circle cx="16" cy="16" r="2.5" fill="currentColor"/>
-              </svg>
+        <div class="steps-v">
+
+          <!-- ── Step 01 ── -->
+          <div class="step-v fade-up">
+            <div class="step-v__content">
+              <div class="step-v__eyebrow">
+                <span class="step-v__num" aria-hidden="true">01</span>
+                <div class="step-v__icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 27C16 27 5 20 5 12.5C5 8.91 7.91 6 11.5 6C13.39 6 15.09 6.8 16.3 8.08L16 8.5L15.7 8.08C16.91 6.8 18.61 6 20.5 6C24.09 6 27 8.91 27 12.5C27 20 16 27 16 27Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="step-v__title">Choose Your Charity</h3>
+              <p class="step-v__desc">Browse our curated selection of the 12 largest and most trusted charities. Switch between list and grid layouts, and click any organisation to read its full mission and verified impact data before you commit.</p>
+              <ul class="step-v__features">
+                <li>Switch between list and grid views</li>
+                <li>Read each charity's full mission statement</li>
+                <li>Verified impact ratings on every organisation</li>
+              </ul>
             </div>
-            <span class="step__num" aria-hidden="true">01</span>
-            <h3 class="step__title">Donate Your Tickets</h3>
-            <p class="step__desc">Submit your unused tickets through our simple platform. We verify authenticity and assess fair market value using our IRS-compliant methodology.</p>
-          </div>
-
-          <div class="step-arrow" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-
-          <div class="step fade-up" style="animation-delay: 0.15s">
-            <div class="step__icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <rect x="6" y="3" width="20" height="26" rx="3" stroke="currentColor" stroke-width="2.5"/>
-                <line x1="11" y1="11" x2="21" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <line x1="11" y1="16" x2="21" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <line x1="11" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M18 20L20 22L24 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+            <div class="step-v__visual step-v__visual--grid">
+                <div class="mock-charity-grid">
+                  <div class="mock-charity-tile mock-charity-tile--sel">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=redcross.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='RC'">
+                    </div>
+                    <span>Red Cross</span>
+                    <svg class="mock-check" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#16a34a"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=unicef.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='UN'">
+                    </div>
+                    <span>UNICEF</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=worldwildlife.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='WW'">
+                    </div>
+                    <span>WWF</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=doctorswithoutborders.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='DW'">
+                    </div>
+                    <span>Doctors W/B</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=feedingamerica.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='FA'">
+                    </div>
+                    <span>Feeding America</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=habitat.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='HH'">
+                    </div>
+                    <span>Habitat for Humanity</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=stjude.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='SJ'">
+                    </div>
+                    <span>St. Jude</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=salvationarmyusa.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='SA'">
+                    </div>
+                    <span>Salvation Army</span>
+                  </div>
+                  <div class="mock-charity-tile">
+                    <div class="mock-charity-tile__logo">
+                      <img src="https://www.google.com/s2/favicons?domain=oxfam.org&sz=64" alt="" loading="lazy" onerror="this.parentElement.textContent='OX'">
+                    </div>
+                    <span>Oxfam</span>
+                  </div>
+                </div>
             </div>
-            <span class="step__num" aria-hidden="true">02</span>
-            <h3 class="step__title">Receive Your Statement</h3>
-            <p class="step__desc">Get an official tax statement recognizing your charitable donation at fair market value, ready to file with your taxes.</p>
           </div>
 
-          <div class="step-arrow" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <div class="step-v__connector" aria-hidden="true">
+            <svg width="20" height="44" viewBox="0 0 20 44" fill="none"><line x1="10" y1="0" x2="10" y2="32" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="4 3"/><path d="M4 30L10 38L16 30" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
 
-          <div class="step fade-up" style="animation-delay: 0.3s">
-            <div class="step__icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <path d="M16 27C16 27 5 20 5 12.5C5 8.91 7.91 6 11.5 6C13.39 6 15.09 6.8 16.3 8.08L16 8.5L15.7 8.08C16.91 6.8 18.61 6 20.5 6C24.09 6 27 8.91 27 12.5C27 20 16 27 16 27Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.12"/>
-                <path d="M11.5 12.5L14.5 15.5L20.5 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          <!-- ── Step 02 ──-->
+          <div class="step-v step-v--flip fade-up" style="animation-delay:0.15s">
+            <div class="step-v__content">
+              <div class="step-v__eyebrow">
+                <span class="step-v__num" aria-hidden="true">02</span>
+                <div class="step-v__icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 5V21M16 5L10 11M16 5L22 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 25H27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="step-v__title">Upload Your Tickets</h3>
+              <p class="step-v__desc">Submit your unused tickets through our simple platform. We verify authenticity and assess fair market value using our IRS-compliant methodology — no paperwork required on your end.</p>
+              <ul class="step-v__features">
+                <li>Upload PDFs, images, or mobile screenshots</li>
+                <li>Automatic authenticity verification</li>
+                <li>IRS-compliant fair market value assessment</li>
+              </ul>
             </div>
-            <span class="step__num" aria-hidden="true">03</span>
-            <h3 class="step__title">Your Charity Gets Paid</h3>
-            <p class="step__desc">Your tickets become tournament prizes. Players pay to compete in live trivia, and 100% of every entry fee goes directly to the charity you chose.</p>
+            <div class="step-v__visual step-v__visual--send">
+                <div class="ts-stack" aria-label="Two event tickets">
+                  <div class="ts-ticket ts-ticket--back" aria-hidden="true">
+                    <div class="ts-ticket__main">
+                      <span class="ts-ticket__event">NBA Playoffs · Game 4</span>
+                      <span class="ts-ticket__venue">Crypto.com Arena</span>
+                      <span class="ts-ticket__seat">Sec 114 · Row C · Seat 9</span>
+                    </div>
+                    <div class="ts-ticket__stub">
+                      <span class="ts-ticket__stub-num">114</span>
+                      <span class="ts-ticket__stub-sec">SEC</span>
+                    </div>
+                  </div>
+                  <div class="ts-ticket ts-ticket--front">
+                    <div class="ts-ticket__main">
+                      <span class="ts-ticket__event">NBA Playoffs · Game 4</span>
+                      <span class="ts-ticket__venue">Crypto.com Arena</span>
+                      <span class="ts-ticket__seat">Sec 114 · Row C · Seat 8</span>
+                    </div>
+                    <div class="ts-ticket__stub">
+                      <span class="ts-ticket__stub-num">114</span>
+                      <span class="ts-ticket__stub-sec">SEC</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-arrow" aria-hidden="true">
+                  <svg width="56" height="20" viewBox="0 0 56 20" fill="none">
+                    <line x1="0" y1="10" x2="42" y2="10" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/>
+                    <path d="M40 4L48 10L40 16" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="ts-dest">
+                  <div class="ts-dest__badge" style="background:#fef2f2;color:#dc2626">RC</div>
+                  <span class="ts-dest__name">Red Cross</span>
+                  <span class="ts-dest__status">
+                    <svg width="11" height="11" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#16a34a"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Received
+                  </span>
+                </div>
+            </div>
           </div>
+
+          <div class="step-v__connector" aria-hidden="true">
+            <svg width="20" height="44" viewBox="0 0 20 44" fill="none"><line x1="10" y1="0" x2="10" y2="32" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="4 3"/><path d="M4 30L10 38L16 30" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <!-- ── Step 03 ──-->
+          <div class="step-v fade-up" style="animation-delay:0.3s">
+            <div class="step-v__content">
+              <div class="step-v__eyebrow">
+                <span class="step-v__num" aria-hidden="true">03</span>
+                <div class="step-v__icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 27C16 27 5 20 5 12.5C5 8.91 7.91 6 11.5 6C13.39 6 15.09 6.8 16.3 8.08L16 8.5L15.7 8.08C16.91 6.8 18.61 6 20.5 6C24.09 6 27 8.91 27 12.5C27 20 16 27 16 27Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.12"/>
+                    <path d="M11.5 12.5L14.5 15.5L20.5 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="step-v__title">Your Charity Gets Paid</h3>
+              <p class="step-v__desc">Your tickets become tournament prizes. Players pay to compete in live trivia, and 100% of every entry fee goes directly to the charity you chose. You receive a tax deduction statement automatically.</p>
+              <ul class="step-v__features">
+                <li>100% of entry fees go directly to your charity</li>
+                <li>Automatic IRS tax deduction statement issued</li>
+                <li>Track your donation impact in real time</li>
+              </ul>
+            </div>
+            <div class="step-v__visual">
+              <div class="outcome-card">
+                <div class="mock-payout__charity">
+                  <div class="mock-charity-tile__logo" style="background:#fef2f2;color:#dc2626;width:40px;height:40px;border-radius:10px;font-size:0.8rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0">RC</div>
+                  <div>
+                    <div class="mock-payout__cname">American Red Cross</div>
+                    <div class="mock-payout__csub">Disaster Relief &amp; Preparedness</div>
+                  </div>
+                </div>
+                <div class="mock-amount-row">
+                  <span class="mock-amount-label">Total Raised</span>
+                  <span class="mock-amount-value">$1,240</span>
+                </div>
+                <div class="mock-progress">
+                  <div class="mock-progress__fill" style="width:82%"></div>
+                </div>
+                <div class="mock-progress-meta">
+                  <span>24 players competed</span>
+                  <span>82% of goal</span>
+                </div>
+                <div class="mock-tax-badge">
+                  <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#16a34a"/><path d="M5 8L7 10L11 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Tax statement ready to download
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

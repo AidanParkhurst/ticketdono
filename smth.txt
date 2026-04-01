@@ -1,0 +1,7 @@
+1: Choose your charity (Initial 12 biggest).
+ - List / grid charities, click on each to read about them
+
+2: Upload your tickets
+ - 
+
+3:
